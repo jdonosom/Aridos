@@ -186,7 +186,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\ConfiguracionAceleracionesController.cs" />
     <Compile Include="Controllers\DatosAceleracionController.cs" />
+    <Compile Include="Controllers\DatosTemperaturaController.cs" />
     <Compile Include="Controllers\EstadoAceleracionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -281,7 +283,7 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\pepel\source\repos\Aridos.BL\Aridos.BL.csproj">
+    <ProjectReference Include="..\Aridos.BL\Aridos.BL.csproj">
       <Project>{b396d86d-53bc-4a91-97a8-195b182a388b}</Project>
       <Name>Aridos.BL</Name>
     </ProjectReference>

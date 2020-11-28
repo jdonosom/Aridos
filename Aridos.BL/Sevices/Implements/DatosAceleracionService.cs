@@ -6,8 +6,10 @@
 
     public class DatosAceleracionService : GenericService<DatosAceleracion>
     {
-        public DatosAceleracionService(IDatosAceleracionRepository datosAceleracionRepository) : base(datosAceleracionRepository)
+        public DatosAceleracionService( IDatosAceleracionRepository datosAceleracionRepository) 
+            : base(datosAceleracionRepository)
         {
         }
     }
 }
+

@@ -11,9 +11,9 @@
         public int TipoSensor { get; set; }
         public int FrecuenciaMuestreo { get; set; }
         public double Calibracion { get; set; }
-        public double ValorCanal1 { get; set; }
-        public double ValorCanal2 { get; set; }
-        public double ValorCanal3 { get; set; }
+        public short[] ValorCanal1 { get; set; }
+        public short[] ValorCanal2 { get; set; }
+        public short[] ValorCanal3 { get; set; }
         public int Razon { get; set; }
     }
 }

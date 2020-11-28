@@ -21,6 +21,7 @@ namespace Aridos.BL.Data
         public DbSet<Faena> Faenas { get; set; }
         public DbSet<Sensor> Sensors { get; set; }
         public DbSet<DatosAceleracion> DatosAceleracions { get; set; }
+        public DbSet<DatosTemperatura> DatosTemperaturas { get; set; }
 
         public static AridosContext Create()
         {

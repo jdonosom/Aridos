@@ -11,6 +11,7 @@
     using System.Threading.Tasks;
     using System.Web.Http;
 
+    [RoutePrefix("api/Aceleraciones")]
     public class DatosAceleracionController : ApiController
     {
         private IMapper mapper;
@@ -21,6 +22,29 @@
         {
             this.mapper = WebApiApplication.MapperConfiguration.CreateMapper();
         }
+
+        [HttpGet]
+        public async Task<IHttpActionResult> GetAll()
+        {
+            var accels = await datosAceleracionService.GetAll();
+            var accelsDTO = accels.Select(x => mapper.Map<DatosAceleracionDTO>(x));
+
+            return Ok(accelsDTO);
+        }
+
+        [HttpGet]
+        public async Task<IHttpActionResult> GetById(int id)
+        {
+            var accel = await datosAceleracionService.GetById(id);
+
+            if (accel == null)
+                return NotFound();
+
+            var accelDTO = mapper.Map<DatosAceleracionDTO>(accel);
+
+            return Ok(accelDTO);
+        }
+
 
         [HttpPost]
         public async Task<IHttpActionResult> PostDatosAceleracion( [FromBody] DatosAceleracionDTO data)
