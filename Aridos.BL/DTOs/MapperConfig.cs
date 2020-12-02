@@ -22,6 +22,8 @@
 
                 cfg.CreateMap<DatosConfiguracionAceleraciones, DatosConfiguracionAceleracionesDTO>().ReverseMap();
 
+                cfg.CreateMap<DatosActualizacionEstados, DatosActualizacionEstadosDTO>().ReverseMap();
+
             });
         }
     }
