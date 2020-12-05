@@ -17,7 +17,8 @@ namespace Aridos.BL.Models
     public class EstadoAceleracion
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        //[DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int ID { get; set; }
         public string NumeroSerie  { get; set; }
         public int TipoSensor { get; set; }
         public DateTime Fecha { get; set; }

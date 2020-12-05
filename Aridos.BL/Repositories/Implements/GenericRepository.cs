@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Threading.Tasks;
 using Aridos.BL.Data;
 
@@ -45,8 +46,8 @@ namespace Aridos.BL.Repositories.Implements
 
         public async Task<TEntity> Update(TEntity entity)
         {
-            aridosContext.Entry(entity).State = EntityState.Modified;
-            //universityContext.Set<TEntity>().AddOrUpdate(entity);
+            //aridosContext.Entry(entity).State = EntityState.Modified;
+            aridosContext.Set<TEntity>().AddOrUpdate(entity);
             await aridosContext.SaveChangesAsync();
             return entity;
         }

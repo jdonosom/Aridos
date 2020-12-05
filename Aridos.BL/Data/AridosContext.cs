@@ -10,8 +10,6 @@ namespace Aridos.BL.Data
 {
     public class AridosContext : DbContext
     {
-        private static AridosContext aridosContext = null;
-
         public AridosContext()
             : base("AridosConextionStringDES")
         {
@@ -22,6 +20,7 @@ namespace Aridos.BL.Data
         public DbSet<Sensor> Sensors { get; set; }
         public DbSet<DatosAceleracion> DatosAceleracions { get; set; }
         public DbSet<DatosTemperatura> DatosTemperaturas { get; set; }
+        public DbSet<DatosActualizacionEstados> DatosActualizacionEstados { get; set; }
 
         public static AridosContext Create()
         {

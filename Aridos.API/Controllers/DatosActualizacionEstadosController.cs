@@ -11,6 +11,7 @@
     using System.Threading.Tasks;
     using System.Web.Http;
 
+    [RoutePrefix("api/ActualizacionEstados")]
     public class DatosActualizacionEstadosController : ApiController
     {
         IMapper mapper;
@@ -53,14 +54,13 @@
             try
             {
                 var datatmp = mapper.Map<DatosActualizacionEstados>(data);
-                return Ok(await datosActualizacionEstadosService.Insert(datatmp) );
+                return Ok(await datosActualizacionEstadosService.Update(datatmp));
             }
             catch (Exception ex)
             {
                 return InternalServerError(ex);
             }
         }
-
 
     }
 

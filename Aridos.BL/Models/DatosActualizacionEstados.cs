@@ -1,15 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Aridos.BL.Models
+﻿namespace Aridos.BL.Models
 {
+    using System;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+
+    [Table("DatosActualizacionEstados", Schema = "dbo")]
     public class DatosActualizacionEstados
     {
-        public uint NumeroSerie { get; set; }
-        public float Bateria { get; set; }
-        public float Temperatura { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int NumeroSerie { get; set; }
+        public double Bateria { get; set; }
+        public double Temperatura { get; set; }
     }
 }

@@ -7,10 +7,11 @@
     public class EstadoAceleracionDTO
     {
         [Required(ErrorMessage = "El campo NumeroSerie es requerido")]
+        public int ID { get; set; }
         public string NumeroSerie { get; set; }
         public int TipoSensor { get; set; }
         public DateTime Fecha { get; set; }
-        public Razon Razon { get; set; }
+        public int Razon { get; set; }
         public double Bateria { get; set; }
         public double Temperatura { get; set; }
         public double Rms1 { get; set; }
