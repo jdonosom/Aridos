@@ -1,2 +1,2 @@
 # Aridos
-API Web recepción de lecturas de sensores
+API Web recepción de lecturas de sensores erbessd phantom
