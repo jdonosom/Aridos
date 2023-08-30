@@ -194,7 +194,6 @@
     <Compile Include="Controllers\DatosTemperaturaController.cs" />
     <Compile Include="Controllers\EstadoAceleracionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -287,7 +286,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Aridos.BL\Aridos.BL.csproj">
-      <Project>{b396d86d-53bc-4a91-97a8-195b182a388b}</Project>
+      <Project>{B396D86D-53BC-4A91-97A8-195B182A388B}</Project>
       <Name>Aridos.BL</Name>
     </ProjectReference>
   </ItemGroup>
