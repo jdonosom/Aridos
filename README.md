@@ -29,3 +29,7 @@ All my repository content is released under the terms of the [MIT License](LICEN
 Esta aplicación recibe los datos desde el Gateway sobre el cual se debe instalar el proyecto EIMOCloudRelay propio, programa encargado de la recepción de los datos desde los sensores y el envio de las lecturas al servicio web que recibe los datos y los almacena en su base de datos.
 
 This application receives the data from the Gateway on which the EIMOCloudRelay project itself must be installed, the program in charge of receiving the data from the sensors and sending the readings to the web service that receives the data and stores it in its database. data.
+
+Si se incorpora a la solución Routers Teltonika 4G/5G es posible monitorear motores, ejes y engranajes de trituradores de piedra en la misma faena.
+
+If Teltonika 4G/5G Routers are incorporated into the solution, it is possible to monitor motors, shafts and gears of stone crushers at the same site.
